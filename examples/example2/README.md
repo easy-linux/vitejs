@@ -16,7 +16,7 @@
 
 Видео с объяснением как это все работает здесь:
 
-https://youtu.be/fnUqyWyG5kk
+https://youtu.be/aMzCDR_MHF0
 
 
 ## Полезные видео по настройке webpack:
