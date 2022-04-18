@@ -4,6 +4,30 @@
 
 Как подключить postCSS autoprefixer к проекту, который собирается с помощью vitejs
 
+Настройка включает три простых шага:
+
+1. Установка плагина autoprefixer
+```
+    npm install -D autoprefixer
+```
+2. Настройка browserslist - добавить в package.json:
+```
+    "browserslist": [ "cover 99.5%" ],
+```
+
+ 
+3. Подключение плагина autoprefixer к сборке.
+    - создать файл postcss.config.js в корне проекта
+    - добавить следующий код:
+
+```
+    module.exports = {
+    plugins: {
+        autoprefixer: {}
+    }
+}
+```
+
 ## Как пользоваться
 
 ```
