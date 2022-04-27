@@ -4,6 +4,7 @@ const fileregex = /\.(css|js)$/i
 const vendorRegex = /vendor/
 
 let viteConfig
+const zeroPad = (num, places) => String(num).padStart(places, '0')
 
 export default function tomeMarkPlugin() {
     return {
@@ -23,7 +24,7 @@ export default function tomeMarkPlugin() {
                     try {
                         const code = fs.readFileSync(bundleFilePath, {encoding: 'utf8'})
                         var currentDate = new Date()
-                        const data = `/* Last build: ${currentDate.getDay()}:${currentDate.getMonth()}:${currentDate.getFullYear()}  ${currentDate.getHours()}.${currentDate.getMinutes()}.${currentDate.getSeconds()}*/\n${code}`
+                        const data = `/* Last build: ${zeroPad(currentDate.getDate())}:${zeroPad(currentDate.getMonth())}:${currentDate.getFullYear()}  ${zeroPad(currentDate.getHours())}.${zeroPad(currentDate.getMinutes())}.${zeroPad(currentDate.getSeconds())}*/\n${code}`
                         fs.writeFileSync(bundleFilePath, data)
                     } catch (e) {
                         console.log(e)
