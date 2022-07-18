@@ -1,0 +1,33 @@
+{
+  "name": "spa_example",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "vite",
+    "build": "cross-env BUILD_TYPE=dev vite build",
+    "serve": "vite preview --port 3000",
+    "build-prod": "cross-env BUILD_TYPE=prod vite build",
+    "test": "vitest run",
+    "coverage": "vitest run --coverage"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@testing-library/dom": "^8.16.0",
+    "@testing-library/jest-dom": "^5.16.4",
+    "@vitejs/plugin-legacy": "^1.7.0",
+    "c8": "^7.11.3",
+    "cross-env": "^7.0.3",
+    "jsdom": "^20.0.0",
+    "sass": "^1.46.0",
+    "vi-fetch": "^0.7.1",
+    "vite": "^2.8.0",
+    "vite-aliases": "^0.8.7",
+    "vitest": "^0.18.0"
+  },
+  "dependencies": {
+    "route-parser": "0.0.5"
+  }
+}
