@@ -33,10 +33,6 @@
     cd build
     http-server-spa . ./index.html 3000
 
-## Видео с объяснением как это все работает 
-
-[![Видео здесь](https://img.youtube.com/vi/4t0i2yzX1E8/0.jpg)](https://www.youtube.com/watch?v=4t0i2yzX1E8)
-
 
 ## Все эпизоды сериала "Создание SPA приложения на чистом JS":
 [все серии](https://www.youtube.com/watch?v=eqAefmCqA6M&list=PLCh6bwt6jth_fkFrU15eyY6Hv18NuWcwa)
