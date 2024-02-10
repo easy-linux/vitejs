@@ -1,0 +1,12 @@
+.MainBlock{
+    display: flex;
+    justify-content: center;
+}
+
+.Input{
+    &::placeholder {
+        color: red;
+      }
+
+      user-select: none;
+}

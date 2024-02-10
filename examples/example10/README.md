@@ -1,6 +1,7 @@
 # Example 3 for Vitejs
 
 ## **Настройка autoprefixer**
+### Обновленная версия. Обновлены пакеты на последние, проект переведен на модули ES
 
 Как подключить postCSS autoprefixer к проекту, который собирается с помощью vitejs
 
@@ -10,9 +11,14 @@
 ```
     npm install -D autoprefixer
 ```
-2. Настройка browserslist - добавить в package.json:
+2. Настройка browserslist - добавить в package.json (для поддержки очень старых браузеров):
 ```
-    "browserslist": [ "cover 99.5%" ],
+    "browserslist": [
+        "Safari >= 5",
+        "iOS >= 5",
+        "not ie <= 10",
+        "> 1%"
+    ],
 ```
 
  
@@ -21,10 +27,15 @@
     - добавить следующий код:
 
 ```
-    module.exports = {
+const exports = {
     plugins: {
-        autoprefixer: {}
+        autoprefixer: {
+            
+        }
     }
+}
+
+export default exports;
 }
 ```
 
@@ -43,17 +54,14 @@
 
 ## Видео с объяснением как это все работает здесь:
 
-https://youtu.be/TZN6dC7ZOs0
+[![Видео здесь](https://img.youtube.com/vi/TZN6dC7ZOs0/0.jpg)](https://www.youtube.com/watch?v=TZN6dC7ZOs0)
 
 ## Еще по vitejs
+
+[![Видео здесь](https://img.youtube.com/vi/wIEauCguZGI/0.jpg)](https://www.youtube.com/watch?v=wIEauCguZGI)
 [![Видео здесь](https://img.youtube.com/vi/t98Q9hliZZo/0.jpg)](https://www.youtube.com/watch?v=t98Q9hliZZo)
-[![Видео здесь](https://img.youtube.com/vi/wIEauCguZGI/0.jpg)](https://www.youtube.com/watch?v=wIEauCguZGI)
-[![Видео здесь](https://img.youtube.com/vi/WXicpAFBbMY/0.jpg)](https://www.youtube.com/watch?v=WXicpAFBbMY)
-[![Видео здесь](https://img.youtube.com/vi/wIEauCguZGI/0.jpg)](https://www.youtube.com/watch?v=wIEauCguZGI)
-[![Видео здесь](https://img.youtube.com/vi/QEdwJtMptTk/0.jpg)](https://www.youtube.com/watch?v=QEdwJtMptTk)
-[![Видео здесь](https://img.youtube.com/vi/4t0i2yzX1E8/0.jpg)](https://www.youtube.com/watch?v=4t0i2yzX1E8)
-[![Видео здесь](https://img.youtube.com/vi/bgp1NR0OXOA/0.jpg)](https://www.youtube.com/watch?v=bgp1NR0OXOA)
-[![Видео здесь](https://img.youtube.com/vi/kIfIGrhjOe4/0.jpg)](https://www.youtube.com/watch?v=kIfIGrhjOe4)
+[![Видео здесь](https://img.youtube.com/vi/aMzCDR_MHF0/0.jpg)](https://www.youtube.com/watch?v=aMzCDR_MHF0)
+
 
 
 ## Полезные видео по настройке webpack:
@@ -74,4 +82,3 @@ https://youtu.be/TZN6dC7ZOs0
 Модульный принцип конфигурации проекта:
 
 [![Видео здесь](https://img.youtube.com/vi/fnUqyWyG5kk/0.jpg)](https://www.youtube.com/watch?v=fnUqyWyG5kk)
-
