@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "start": "vite",
     "build": "cross-env BUILD_TYPE=dev vite build",
@@ -13,10 +14,10 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@vitejs/plugin-legacy": "^1.7.0",
-    "cross-env": "^7.0.3",
-    "sass": "^1.46.0",
-    "vite": "^2.8.0",
-    "vite-aliases": "^0.8.7"
+    "@vitejs/plugin-legacy": "5.4.2",
+    "cross-env": "7.0.3",
+    "sass": "1.79.5",
+    "vite": "5.4.8",
+    "vite-aliases": "0.10.0"
   }
 }
